@@ -1,5 +1,5 @@
 def install_template(source_directory, destination_directory)
-  install_dir = File.expand_path("~/Library/Developer/Xcode/Templates/File Templates/#{destination_directory}/#{source_directory}")
+  install_dir = File.expand_path("~/Library/Developer/Xcode/Templates/#{destination_directory}")
   src_dir = File.expand_path("../#{source_directory}", __FILE__)
 
   desc "Install template"
@@ -19,5 +19,5 @@ def install_template(source_directory, destination_directory)
 end
 
 namespace "viper_module" do
-  install_template "ViperModuleTemplate", "ViperModule"
+  install_template "ViperModuleTemplate.xctemplate", "ViperModule"
 end
