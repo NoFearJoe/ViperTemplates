@@ -4,7 +4,7 @@ def install_template(source_directory, destination_directory)
 
   desc "Install template"
   task :install do
-    if File.exists? install_dir
+    if File.exists? "install_dir/#{source_directory}"
       raise "This template is already installed at #{install_dir}"
     else
       mkdir_p install_dir
@@ -18,6 +18,11 @@ def install_template(source_directory, destination_directory)
   end
 end
 
-namespace "viper_module" do
-  install_template "ViperModuleTemplate.xctemplate", "ViperModule"
+
+namespace "module" do
+  install_template "Module.xctemplate", "Viper"
+end
+
+namespace "assembly" do
+  install_template "Assembly.xctemplate", "Viper"
 end
