@@ -9,19 +9,21 @@
 
 class ___FILEBASENAME___Assembly {
     
-    class func assembly(with viewController: ___FILEBASENAME___ViewProtocol) -> ___FILEBASENAME___ModuleInput {
+    class func assembly(with view: ___FILEBASENAME___ViewProtocol, output: ___FILEBASENAME___ModuleOutput? = nil) -> ___FILEBASENAME___ModuleInput {
         let interactor = ___FILEBASENAME___Interactor()
         let router = ___FILEBASENAME___Router()
         let presenter = ___FILEBASENAME___Presenter()
         
-        presenter.interactor = interactor as ___FILEBASENAME___InteractorInput
-        presenter.router = router as ___FILEBASENAME___RouterInput
-        presenter.view = viewController as? ___FILEBASENAME___ViewInput
+        presenter.interactor = interactor
+        presenter.router = router
+        presenter.view = view
         presenter.output = output
         
-        viewController.output = presenter as ___FILEBASENAME___ViewOutput
+        interactor.output = presenter
         
-        return presenter as ___FILEBASENAME___ModuleInput
+        view.output = presenter
+        
+        return presenter
     }
     
 }
