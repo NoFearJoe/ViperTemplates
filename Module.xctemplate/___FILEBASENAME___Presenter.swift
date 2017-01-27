@@ -7,7 +7,7 @@
 //
 
 
-class ___FILEBASENAME___Presenter {
+class ___FILEBASENAME___Presenter: ___FILEBASENAME___PresenterProtocol {
 
     var interactor: ___FILEBASENAME___InteractorInput?
     var router: ___FILEBASENAME___RouterInput?

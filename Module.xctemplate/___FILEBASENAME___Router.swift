@@ -6,17 +6,8 @@
 //___COPYRIGHT___
 //
 
-import UIKit
 
-
-
-class ___FILEBASENAME___Router {
-
-    
-
-}
-
-extension ___FILEBASENAME___Router: ___FILEBASENAME___RouterInput {
+class ___FILEBASENAME___Router: ___FILEBASENAME___RouterProtocol {
 
     
 

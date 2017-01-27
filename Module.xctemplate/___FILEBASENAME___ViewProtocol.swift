@@ -6,12 +6,15 @@
 //___COPYRIGHT___
 //
 
-import UIKit
 
-
-
-protocol ___FILEBASENAME___ViewProtocol: class {
-
+protocol ___FILEBASENAME___ViewProtocol: ___FILEBASENAME___ViewInput {
     var output: ___FILEBASENAME___ViewOutput? { get set }
+}
 
+protocol ___FILEBASENAME___ViewInput: class {
+    
+}
+
+protocol ___FILEBASENAME___ViewOutput: class {
+    
 }
