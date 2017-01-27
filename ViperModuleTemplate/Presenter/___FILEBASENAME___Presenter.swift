@@ -9,7 +9,11 @@
 
 class ___FILEBASENAME___Presenter {
 
+    var interactor: ___FILEBASENAME___InteractorInput?
+    var router: ___FILEBASENAME___RouterInput?
+    weak var view: ___FILEBASENAME___ViewInput?
     
+    var output: ___FILEBASENAME___ModuleOutput?
 
 }
 

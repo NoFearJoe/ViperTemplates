@@ -12,7 +12,7 @@ import UIKit
 
 class ___FILEBASENAME___Interactor {
 
-    
+    weak var output: ___FILEBASENAME___InteractorOutput?
 
 }
 

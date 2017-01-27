@@ -12,7 +12,7 @@ import UIKit
 
 class ___FILEBASENAME___View: UIViewController {
 
-    
+    var output: ___FILEBASENAME___ViewOutput?
 
 }
 
