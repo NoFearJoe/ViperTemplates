@@ -26,3 +26,5 @@ end
 namespace "assembly" do
   install_template "Assembly.xctemplate", "Viper"
 end
+
+task default: ["module:install", "assembly:install"]
