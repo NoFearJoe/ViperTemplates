@@ -8,7 +8,7 @@
 
 
 protocol ___FILEBASENAME___ViewProtocol: ___FILEBASENAME___ViewInput {
-    var output: ___FILEBASENAME___ViewOutput? { get set }
+    var output: ___FILEBASENAME___ViewOutput! { get set }
 }
 
 protocol ___FILEBASENAME___ViewInput: class {

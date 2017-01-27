@@ -12,7 +12,7 @@ import UIKit
 
 class ___FILEBASENAME___View: UIViewController, ___FILEBASENAME___ViewProtocol {
 
-    var output: ___FILEBASENAME___ViewOutput?
+    var output: ___FILEBASENAME___ViewOutput!
 
 }
 

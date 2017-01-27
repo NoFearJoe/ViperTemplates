@@ -9,7 +9,7 @@
 
 class ___FILEBASENAME___Presenter: ___FILEBASENAME___PresenterProtocol {
 
-    var interactor: ___FILEBASENAME___InteractorInput?
+    var interactor: ___FILEBASENAME___InteractorInput!
     var router: ___FILEBASENAME___RouterInput?
     weak var view: ___FILEBASENAME___ViewInput?
     

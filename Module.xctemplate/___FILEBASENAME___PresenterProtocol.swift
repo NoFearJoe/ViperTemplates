@@ -8,7 +8,7 @@
 
 
 protocol ___FILEBASENAME___PresenterProtocol: ___FILEBASENAME___PresenterInput, ___FILEBASENAME___PresenterOutput {
-    var interactor: ___FILEBASENAME___InteractorInput? { get set }
+    var interactor: ___FILEBASENAME___InteractorInput! { get set }
     var router: ___FILEBASENAME___RouterInput? { get set }
     weak var view: ___FILEBASENAME___ViewInput? { get set }
     
